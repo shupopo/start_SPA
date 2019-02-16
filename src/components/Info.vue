@@ -9,11 +9,7 @@
     name: 'Info',
     data() {
       return {
-        msg: 'Info',
-        location: [
-          {id: 1, name: 'Site1', country: 'USA', metro: 'San Jose', market: 'US', status: 'Active'},
-          {id: 2, name: 'Site2', country: 'USA', metro: 'San Mateo', market: 'US', status: 'Active'},
-          {id: 3, name: 'Site3', country: 'USA', metro: 'San Rafael', market: 'US', status: 'Active'}],
+        msg: 'Info here'
       };
     },
   };
