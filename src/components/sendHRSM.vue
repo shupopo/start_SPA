@@ -29,11 +29,12 @@
       };
     },
     methods: {
-      async requestHRSM() {
+      requestHRSM() {
         const url = 'https://83bdxwjho2.execute-api.us-east-1.amazonaws.com/default/faucetnow';
-        const result = await axios.post(url, {
+        console.log()
+        const result = axios.post(url, JSON.stringify({
           address: this.input10,
-        }).catch(e=>console.log(e));
+        })).then(result=>console.log(result)).catch(e=>console.log(e)).finally(this.$router.push({path:'/sended'}));
       },
     },
   };
