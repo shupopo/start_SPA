@@ -2,9 +2,9 @@
   <div class="hello">
     <p>Bitcoin Price Index</p>
     <el-table :data="info" style="width: 100%">
-      <el-table-column prop="code" label="id" width="100"></el-table-column>
+      <el-table-column prop="code" label="currency" width="100"></el-table-column>
       <el-table-column prop="rate" label="name"></el-table-column>
-      <el-table-column prop="description" label="name"></el-table-column>
+      <el-table-column prop="description" label="description"></el-table-column>
     </el-table>
   </div>
 </template>

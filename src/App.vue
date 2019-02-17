@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>Header
+      <el-header>HIROSHIMA Shuhei's Portfolio Site
         <el-menu default-active="1" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
           <el-menu-item index="1">
             <i class="el-icon-star-off"></i>
@@ -12,7 +12,7 @@
           <el-menu-item index="2">
             <i class="el-icon-view"></i>
             <router-link to="/sendHRSM">
-              <span>sendHRSM</span>
+              <span>HRSM faucet</span>
             </router-link>
           </el-menu-item>
         </el-menu>
@@ -22,9 +22,6 @@
       <el-main>
         <router-view/>
       </el-main>
-    </el-container>
-    <el-container>
-      <el-footer>Footer</el-footer>
     </el-container>
   </div>
 </template>
