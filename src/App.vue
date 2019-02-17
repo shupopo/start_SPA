@@ -4,15 +4,15 @@
       <el-header>Header
         <el-menu default-active="1" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
           <el-menu-item index="1">
+            <i class="el-icon-star-off"></i>
             <router-link to="/">
-              <i class="el-icon-star-off"></i>
               <span>Home</span>
             </router-link>
           </el-menu-item>
           <el-menu-item index="2">
-            <i class="el-icon-info"></i>
-            <router-link to="/Info">
-              <span>Info</span>
+            <i class="el-icon-view"></i>
+            <router-link to="/sendHRSM">
+              <span>sendHRSM</span>
             </router-link>
           </el-menu-item>
         </el-menu>

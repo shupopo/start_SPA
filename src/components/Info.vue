@@ -1,16 +1,26 @@
 <template>
   <div class="hello">
-    <p>{{ msg }}</p>
+    <p>Bitcoin Price Index</p>
+    <el-table :data="info" style="width: 100%">
+      <el-table-column prop="code" label="id" width="100"></el-table-column>
+      <el-table-column prop="rate" label="name"></el-table-column>
+      <el-table-column prop="description" label="name"></el-table-column>
+    </el-table>
   </div>
 </template>
 
 <script>
+  const axios = require('axios');
+
   export default {
     name: 'Info',
     data() {
       return {
-        msg: 'Info here'
+        info: null,
       };
+    },
+    mounted() {
+      axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then(response => (this.info = response.data.bpi));
     },
   };
 </script>
